@@ -1,0 +1,23 @@
+#create
+POST http://localhost:3000/users.json
+Content-Type: application/json
+
+{
+  "first_name": "alexia",
+  "last_name": "nachtigal",
+  "email": "test2@gmail.com"
+}
+
+###
+# update
+PATCH http://localhost:3000/users/1.json
+Content-Type: application/json
+
+{
+  "email": "test@gmail.com"
+}
+
+###
+# destroy
+DELETE http://localhost:3000/users/2.json
+Content-Type: application/json
